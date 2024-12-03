@@ -3,19 +3,20 @@
 \usepackage{graphicx}
 \usepackage[font=small,labelfont=bf]{caption} % Required for specifying captions to tables and figures
 \usepackage[margin=0.5in]{geometry}
+\usepackage{authblk}
+
 
 
 \graphicspath{{assets/}} 
 
-\title{Digital Logic Design Final Project: } 
+\title{Digital Logic Design Final Project: Stacker} 
 \author{Zidane Karim, Christos Sarris, Wilson Li} 
-\date{\today} 
+\affil{The Skibidi Toilets}
 
 \begin{document} 
     \maketitle 
 
-    \section{Introduction}
-    \subsection{Purpose}
+    \section{Purpose}
     
     Our project involves designing a game where the objective is to stack ``blocks'' represented by LEDs on top of each other. The gameplay mechanics are as follows:
 
@@ -36,7 +37,7 @@
     The length of the blocks could also be 2 blocks wide, so the player would have more opportunities to stack the blocks but also more places to lose the blocks off of. 
     The game ends when the player reaches the top, or if the player loses all their current blocks to the void.  
 
-    \subsection{Components}
+    \section{Components}
 
     The key subcircuits we will be using are:
     \begin{itemize}
@@ -48,6 +49,21 @@
         \item Reading to the least significant address of a RAM block to check for collisions.
         \item Writing to the RAM block to store the player's progress/position.
         \item Continously reading from the RAM block to update the LED matrix.
+    \end{itemize}
+
+    \section{Design and Diagrams}
+    \includegraphics[width=0.3\textwidth]{Diagram.png}
+    \captionof{figure}{Block Diagram of the Stacker Game}
+    \includegraphics[width=0.3\textwidth]{Stacker.png}
+    \captionof{figure}{Stacker Game Layout}
+    
+    \section{Schedule}
+    \begin{itemize}
+        \item Monday, 11/25, Logisim for the clock, making the LED array, and the variable clock frequency logic
+        \item Monday, 12/2, Wiring for clock, LED array, variable frequency. Logisim for the debounced button, and the logic to store the LED outputs of a button press onto the RAM
+        \item Monday, 12/9, Wiring for the debounced button, and the logic to store the LED outputs of a button press onto the RAM, Logisim for the logic to initialize each row at startup, and the logic that displays the LED outputs from the RAM onto the LED array.
+        \item Friday, 12/13 Wiring for the logic to initialize each row at startup, and the logic that displays the LED outputs from the RAM onto the LED array. Logisim for the score display with 7 segment LEDs and the logic to display the score
+        
     \end{itemize}
    
 \end{document} 
