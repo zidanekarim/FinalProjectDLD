@@ -18,7 +18,7 @@
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
-  <main name="main"/>
+  <main name="bounce"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -51,9 +51,9 @@
     <tool lib="4" name="D Flip-Flop"/>
     <tool lib="4" name="Register"/>
   </toolbar>
-  <circuit name="main">
+  <circuit name="bounce">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="main"/>
+    <a name="circuit" val="bounce"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(340,770)" name="Clock"/>
@@ -119,11 +119,11 @@
     <wire from="(260,250)" to="(480,250)"/>
     <wire from="(290,650)" to="(290,800)"/>
     <wire from="(290,800)" to="(690,800)"/>
+    <wire from="(30,120)" to="(30,620)"/>
+    <wire from="(30,120)" to="(860,120)"/>
+    <wire from="(30,620)" to="(290,620)"/>
     <wire from="(340,670)" to="(340,770)"/>
     <wire from="(340,770)" to="(500,770)"/>
-    <wire from="(40,120)" to="(40,620)"/>
-    <wire from="(40,120)" to="(860,120)"/>
-    <wire from="(40,620)" to="(290,620)"/>
     <wire from="(400,380)" to="(400,460)"/>
     <wire from="(400,380)" to="(430,380)"/>
     <wire from="(400,460)" to="(400,550)"/>
